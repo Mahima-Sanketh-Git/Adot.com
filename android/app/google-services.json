@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595675376511",
+    "project_id": "adot-database",
+    "storage_bucket": "adot-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595675376511:android:b8ac4d79c973faed6c084a",
+        "android_client_info": {
+          "package_name": "com.example.adot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595675376511-1oh2uv6vll8hbrsrjdg1mp755lm4bn7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1RgB0yAOjD46AQDoUp3gLB-DY25TXLYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595675376511-1oh2uv6vll8hbrsrjdg1mp755lm4bn7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
