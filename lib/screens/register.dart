@@ -48,10 +48,11 @@ class _RegisterState extends State<Register> {
                 height: 25,
               ),
               TextFormField(
+                obscureText: true,
                 controller: password,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
-                  hintText: "Passsword (At least use 8 characters)",
+                  hintText: "Passsword",
                   suffixIcon: myfu(),
                 ),
                 onChanged: (String value2) async {
@@ -117,10 +118,15 @@ class _RegisterState extends State<Register> {
                         width: 90,
                       ),
                     ),
-                    Image.asset(
-                      'assets/facebook.png',
-                      height: 70,
-                      width: 70,
+                    GestureDetector(
+                      onTap: () {
+                        signInWithFacebook();
+                      },
+                      child: Image.asset(
+                        'assets/facebook.png',
+                        height: 70,
+                        width: 70,
+                      ),
                     ),
                   ],
                 ),

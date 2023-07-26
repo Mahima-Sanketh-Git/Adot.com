@@ -41,6 +41,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.1"
+  cloud_firestore:
+    dependency: "direct main"
+    description:
+      name: cloud_firestore
+      sha256: f1a06ad4499ed9ab73703560d44893e6b9e66ce3923c9121f4ef3981c972057f
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.8.4"
+  cloud_firestore_platform_interface:
+    dependency: transitive
+    description:
+      name: cloud_firestore_platform_interface
+      sha256: "86bd1865abbeb09a7d09da3e70364a09f894937270651fc611a1c6d6a9f7b02c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.15.3"
+  cloud_firestore_web:
+    dependency: transitive
+    description:
+      name: cloud_firestore_web
+      sha256: ac2eeb2a7ab1928c3aacc30eed750fa839d6f620e112a5459e321df217be2f47
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.6.3"
   collection:
     dependency: transitive
     description:
@@ -81,6 +105,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  file_picker:
+    dependency: "direct main"
+    description:
+      name: file_picker
+      sha256: "21145c9c268d54b1f771d8380c195d2d6f655e0567dc1ca2f9c134c02c819e0a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.3.3"
   firebase_auth:
     dependency: "direct dev"
     description:
@@ -134,6 +166,30 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_facebook_auth:
+    dependency: "direct dev"
+    description:
+      name: flutter_facebook_auth
+      sha256: "779215296119c156975d4f596a7434a1fa35c0ef304f2ead3c17c1546499c6c5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.5.7"
+  flutter_facebook_auth_platform_interface:
+    dependency: transitive
+    description:
+      name: flutter_facebook_auth_platform_interface
+      sha256: "06b27d024cff8093e0ed6f8067d43f9451610ca23845d1ad5ddf12f7e43904e3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.7.1"
+  flutter_facebook_auth_web:
+    dependency: transitive
+    description:
+      name: flutter_facebook_auth_web
+      sha256: "7845becbe9631400caa9a86557382431cef72e5530f2b809cfbc69587c0d119d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.6.0+2"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -142,6 +198,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      sha256: "950e77c2bbe1692bc0874fc7fb491b96a4dc340457f4ea1641443d0a6c1ea360"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.15"
   flutter_test:
     dependency: "direct dev"
     description: flutter
