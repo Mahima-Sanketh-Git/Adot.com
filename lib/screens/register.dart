@@ -65,6 +65,7 @@ class _RegisterState extends State<Register> {
               const SizedBox(
                 height: 25,
               ),
+              //!sign in function
               GestureDetector(
                 onTap: () {
                   signin();
@@ -141,11 +142,11 @@ class _RegisterState extends State<Register> {
                   );
                 },
                 child: Text(
-                  "I don't have an account--- Register ?",
+                  "Create An Account?",
                   style: GoogleFonts.poppins(
                     color: const Color.fromARGB(255, 4, 127, 228),
                     fontWeight: FontWeight.w700,
-                    fontSize: 16,
+                    fontSize: 18,
                   ),
                 ),
               )

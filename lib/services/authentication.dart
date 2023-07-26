@@ -10,5 +10,15 @@ Future signin() async {
 }
 
 Future googlesignin() async {
+  //flow
   final GoogleSignInAccount? googleuser = await GoogleSignIn().signIn();
+
+  final GoogleSignInAuthentication? googleauth =
+      await googleuser?.authentication;
+
+  final credential = GoogleAuthProvider.credential(
+    accessToken: googleauth?.accessToken,
+    idToken: googleauth?.idToken,
+  );
+  return await FirebaseAuth.instance.signInWithCredential(credential);
 }
