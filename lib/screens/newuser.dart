@@ -1,7 +1,6 @@
+import 'package:adot/screens/home.dart';
 import 'package:adot/services/authentication.dart';
 import 'package:flutter/material.dart';
-
-import 'package:file_picker/file_picker.dart';
 
 class NewUser extends StatefulWidget {
   const NewUser({super.key});
@@ -17,7 +16,6 @@ TextEditingController email2 = TextEditingController();
 TextEditingController lastname = TextEditingController();
 String name = '';
 String choose = '';
-List mylist = ['Tech', 'Food', 'Toys', 'Home', 'Beauty', 'Fashion'];
 
 class _NewUserState extends State<NewUser> {
   @override
@@ -43,9 +41,7 @@ class _NewUserState extends State<NewUser> {
                       Padding(
                         padding: const EdgeInsets.only(top: 90),
                         child: IconButton(
-                          onPressed: () {
-                            file();
-                          },
+                          onPressed: () {},
                           icon: const Icon(
                             Icons.add_a_photo_outlined,
                             size: 40,
@@ -60,6 +56,11 @@ class _NewUserState extends State<NewUser> {
                 height: 35,
               ),
               TextFormField(
+                onChanged: (value) {
+                  setState(() {
+                    firstname.text;
+                  });
+                },
                 controller: firstname,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -133,7 +134,17 @@ class _NewUserState extends State<NewUser> {
               GestureDetector(
                 onTap: () {
                   createuser();
-                  setState(() {});
+                  setState(
+                    () {
+                      choose = firstname.text;
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Home(),
+                        ),
+                      );
+                    },
+                  );
                 },
                 child: Container(
                   width: 314,
@@ -206,11 +217,4 @@ myf() {
   } else {
     Null;
   }
-}
-
-void file() async {
-  FilePickerResult? result = await FilePicker.platform.pickFiles(
-    type: FileType.custom,
-    allowedExtensions: ['jpg', 'pdf', 'doc'],
-  );
 }

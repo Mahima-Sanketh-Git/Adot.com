@@ -1,9 +1,9 @@
+import 'package:adot/screens/home.dart';
 import 'package:adot/screens/newuser.dart';
 import 'package:adot/services/authentication.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:adot/screens/data.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -75,7 +75,7 @@ class _RegisterState extends State<Register> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Data(),
+                          builder: (context) => const Home(),
                         ),
                       );
                     });
