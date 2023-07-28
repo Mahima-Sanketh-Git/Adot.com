@@ -154,6 +154,187 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+            height: 165,
+            width: double.infinity,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  height: 155,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/watch.png"),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          "Swiss Watch",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const Text(
+                          "Rs.5,000",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                Container(
+                  height: 155,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/k.png"),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          "Kaspersky Key",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const Text(
+                          "Rs.2,500",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                //!now
+                const SizedBox(
+                  width: 18,
+                ),
+                Container(
+                  height: 155,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(25),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/f.png"),
+                        const SizedBox(
+                          height: 2,
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          "Fruits Pack",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const Text(
+                          "Rs.4,500",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                Container(
+                  height: 155,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/7.png"),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          "Mac Boook",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const Text(
+                          "Rs.250,000",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Text(
+                  "Just For You",
+                  style: GoogleFonts.poppins(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
